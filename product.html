@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/19128d0f7e.js" crossorigin="anonymous"></script>
+
+    <link type="image/png" sizes="96x96" rel="icon" href="/assets/icons8-coffee-beans-96.png">
+    <title>MrCoffee | Product</title>
+</head>
+<body>
+
+    <nav>
+        <div class="icon-logo">
+            <i class="fa-solid fa-mug-saucer fa-2x icon"></i>
+            <a href="#">MrCoffee</a>
+        </div>
+            <ul class="navbar" id="navbarLink">
+                <img id="closeMenu" src="assets/closeMenupng.png" alt="">
+                <li><a href="index.html">Home</a></li>
+                <li><a id="current" href="product.html">Product</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+
+            <img id="hamburgerMenu" src="assets/Hamburgermenu.png" alt="">
+    </nav>
+
+    <main>
+        <!-- Top Menu / Favorite Menu -->
+        <section class="menu-section">
+            <div class="menu-container">
+                <div class="section-title">
+                    <p>Top Menu</p>
+                    <h2>People Favorites</h2>
+                </div>
+                <div class="menu-wrapper">
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/Latte.jpg" alt="Latte">
+                        <div class="menu-info">
+                            <h2>Latte</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.99 (159 reviews)</span>
+                            </div>
+                            <p>Smooth espresso combined with velvety steamed milk and a light layer of microfoam for a gentle, creamy coffee experience.</p>
+                            <div class="button-container">
+                                <p>$2.9</p>
+                                <button class="button orderBtn" type="button" onclick="add('Latte')">&plus;</button>
+                                <label id="countLatte">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Latte')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/Avocado_Espresso.jpg" alt="Avocado Espresso">
+                        <div class="menu-info">
+                            <h2>Avocado Espresso</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.81 (86 reviews)</span>
+                            </div>
+                            <p>A silky, lush avocado base topped with a shot of hot espresso, creating a unique balance of rich, creamy texture and bold coffee flavor.</p>
+                            <div class="button-container">
+                                <p>$5.1</p>
+                                <button class="button orderBtn" type="button" onclick="add('Avocado Espresso')">&plus;</button>
+                                <label id="countAvocado Espresso">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Avocado Espresso')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/Hot_Chocolate.jpg" alt="Hot Chocolate">
+                        <div class="menu-info">
+                            <h2>Hot Chocolate</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.52 (250 reviews)</span>
+                            </div>
+                            <p>Rich, cocoa-infused indulgence blended with warm, silky milk for a comforting, timeless treat.</p>
+                            <div class="button-container">
+                                <p>$3.3</p>
+                                <button class="button orderBtn" type="button" onclick="add('Chocolate')">&plus;</button>
+                                <label id="countChocolate">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Chocolate')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/Iced_Caramel_Macchiato.jpg" alt="Iced Caramel Macchiato">
+                        <div class="menu-info">
+                            <h2>Caramel Macchiato</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.88 (201 reviews)</span>
+                            </div>
+                            <p>Bold espresso layered over sweet vanilla-infused milk, finished with a buttery drizzle of caramel sauce.</p>
+                            <div class="button-container">
+                                <p>$4.3</p>
+                                <button class="button orderBtn" type="button" onclick="add('Caramel Macchiato')">&plus;</button>
+                                <label id="countCaramel Macchiato">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Caramel Macchiato')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/Lemonade.jpg" alt="Lemonade">
+                        <div class="menu-info">
+                            <h2>Lemonade</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.88 (201 reviews)</span>
+                            </div>
+                            <p>A crisp, zesty refresher made with freshly squeezed lemon juice and sweet syrup over ice.</p>
+                            <div class="button-container">
+                                <p>$4.3</p>
+                                <button class="button orderBtn" type="button" onclick="add('Lemonade')">&plus;</button>
+                                <label id="countLemonade">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Lemonade')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coffee Menu -->
+        <section class="menu-section">
+            <div class="menu-container">
+                <div class="section-title">
+                    <p>Espresso & Cold Brew</p>
+                    <h2>House Crafted</h2>
+                </div>
+                <div class="menu-wrapper">
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/VanillaSweetCreamColdBrew.jpg" alt="Vanilla Bean Cold Foam Brew">
+                        <div class="menu-info">
+                            <h2>Vanilla Bean Cold Foam Brew</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.51 (59 reviews)</span>
+                            </div>
+                            <p>Steeped cold brew topped with a light, airy layer of whipped vanilla sweet cream foam.</p>
+                            <div class="button-container">
+                                <p>$6.7</p>
+                                <button class="button orderBtn" type="button" onclick="add('Vanilla Bean Cold Foam Brew')">&plus;</button>
+                                <label id="countVanilla Bean Cold Foam Brew">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Vanilla Bean Cold Foam Brew')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/IceSpanishLatte.jpg" alt="Ice Spanish Latte">
+                        <div class="menu-info">
+                            <h2>Ice Spanish Latte</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.35 (22 reviews)</span>
+                            </div>
+                            <p>Espresso shaken with condensed milk and whole milk over ice for a rich, sweet kick.</p>
+                            <div class="button-container">
+                                <p>$2.0</p>
+                                <button class="button orderBtn" type="button" onclick="add('Ice Spanish Latte')">&plus;</button>
+                                <label id="countIce Spanish Latte">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Ice Spanish Latte')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/DirtyChaiLatte.jpg" alt="Dirty Chai Latte">
+                        <div class="menu-info">
+                            <h2>Dirty Chai Latte</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.67 (33 reviews)</span>
+                            </div>
+                            <p>Spiced black tea and steamed milk infused with a double shot of espresso.</p>
+                            <div class="button-container">
+                                <p>$3.4</p>
+                                <button class="button orderBtn" type="button" onclick="add('Dirty Chai Latte')">&plus;</button>
+                                <label id="countDirty Chai Latte">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Dirty Chai Latte')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/HazelnutMocha.jpg" alt="Hazelnut Mocha">
+                        <div class="menu-info">
+                            <h2>Hazelnut Mocha</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.21 (19 reviews)</span>
+                            </div>
+                            <p>Bold espresso combined with bittersweet chocolate and toasted hazelnut syrup.</p>
+                            <div class="button-container">
+                                <p>$4.4</p>
+                                <button class="button orderBtn" type="button" onclick="add('Hazelnut Mocha')">&plus;</button>
+                                <label id="countHazelnut Mocha">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Hazelnut Mocha')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/NitroColdBrew.jpg" alt="Nitro Cold Brew">
+                        <div class="menu-info">
+                            <h2>Nitro Cold Brew</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.19 (71 reviews)</span>
+                            </div>
+                            <p>Nitrogen-infused cold brew coffee served on tap for a smooth, naturally sweet, draught-like texture.</p>
+                            <div class="button-container">
+                                <p>$6.1</p>
+                                <button class="button orderBtn" type="button" onclick="add('Nitro Cold Brew')">&plus;</button>
+                                <label id="countNitro Cold Brew">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Nitro Cold Brew')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Non-Coffee Drinks -->
+        <section class="menu-section">
+            <div class="menu-container">
+                <div class="section-title">
+                    <p>Refresher</p>
+                    <h2>Craft Drinks</h2>
+                </div>
+                <div class="menu-wrapper">
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/HibiscusBerryTea.jpg" alt="Hibiscus Berry Tea">
+                        <div class="menu-info">
+                            <h2>Hibiscus Berry Tea</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.44 (81 reviews)</span>
+                            </div>
+                            <p>Tart hibiscus tea blended with dried berries and sweet botanical notes.</p>
+                            <div class="button-container">
+                                <p>$5.5</p>
+                                <button class="button orderBtn" type="button" onclick="add('Hibiscus Berry Tea')">&plus;</button>
+                                <label id="countHibiscus Berry Tea">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Hibiscus Berry Tea')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/TaroMilkTea.jpg" alt="Taro Milk Tea">
+                        <div class="menu-info">
+                            <h2>Taro Milk Tea</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.21 (13 reviews)</span>
+                            </div>
+                            <p>Earthy, sweet purple taro root blended with creamy milk and served over ice.</p>
+                            <div class="button-container">
+                                <p>$6.0</p>
+                                <button class="button orderBtn" type="button" onclick="add('Taro Milk Tea')">&plus;</button>
+                                <label id="countTaro Milk Tea">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Taro Milk Tea')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/StrawberryCreamSparkler.jpg" alt="Strawberry Cream Sparkler">
+                        <div class="menu-info">
+                            <h2>Strawberry Cream Sparkler</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.66 (20 reviews)</span>
+                            </div>
+                            <p>Real strawberry reduction layered with sparkling soda water and a touch of heavy cream.</p>
+                            <div class="button-container">
+                                <p>$2.3</p>
+                                <button class="button orderBtn" type="button" onclick="add('Strawberry Cream Sparkler')">&plus;</button>
+                                <label id="countStrawberry Cream Sparkler">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Strawberry Cream Sparkler')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/HotAppleCider.jpg" alt="Hot Apple Cider">
+                        <div class="menu-info">
+                            <h2>Hot Apple Cider</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.46 (89 reviews)</span>
+                            </div>
+                            <p>Warm, spiced apple juice simmered with cinnamon sticks and nutmeg.</p>
+                            <div class="button-container">
+                                <p>$3.2</p>
+                                <button class="button orderBtn" type="button" onclick="add('Hot Apple Cider')">&plus;</button>
+                                <label id="countHot Apple Cider">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Hot Apple Cider')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/MatchaCoconutWater.jpg" alt="Matcha Coconut Water">
+                        <div class="menu-info">
+                            <h2>Matcha Coconut Water</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.77 (101 reviews)</span>
+                            </div>
+                            <p>Whisked ceremonial matcha poured directly over chilled pure coconut water.</p>
+                            <div class="button-container">
+                                <p>$4.0</p>
+                                <button class="button orderBtn" type="button" onclick="add('Matcha Coconut Water')">&plus;</button>
+                                <label id="countMatcha Coconut Water">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Matcha Coconut Water')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food -->
+        <section class="menu-section">
+            <div class="menu-container">
+                <div class="section-title">
+                    <p>Food</p>
+                    <h2>Make Your Tummy Full</h2>
+                </div>
+                <div class="menu-wrapper">
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/AvocadoEggToast.jpg" alt="Avocado Egg Toast">
+                        <div class="menu-info">
+                            <h2>Avocado Egg Toast</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.79 (222 reviews)</span>
+                            </div>
+                            <p>Smashed avocado on toasted sourdough topped with a poached egg, chili flakes, and microgreens.</p>
+                            <div class="button-container">
+                                <p>$5.0</p>
+                                <button class="button orderBtn" type="button" onclick="add('Avocado Egg Toast')">&plus;</button>
+                                <label id="countAvocado Egg Toast">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Avocado Egg Toast')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/SmokedSalmonBagel.jpg" alt="Smoked Salmon Bagel">
+                        <div class="menu-info">
+                            <h2>Smoked Salmon Bagel</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.88 (149 reviews)</span>
+                            </div>
+                            <p>Everything bagel spread with chive cream cheese, topped with smoked salmon, capers, and red onion.</p>
+                            <div class="button-container">
+                                <p>$5.2</p>
+                                <button class="button orderBtn" type="button" onclick="add('Smoked Salmon Bagel')">&plus;</button>
+                                <label id="countSmoked Salmon Bagel">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Smoked Salmon Bagel')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/CinnamonRoll.jpg" alt="Cinnamon Roll">
+                        <div class="menu-info">
+                            <h2>Cinnamon Roll</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.38 (159 reviews)</span>
+                            </div>
+                            <p>Soft yeast dough rolled with cinnamon and brown sugar, topped with cream cheese icing.</p>
+                            <div class="button-container">
+                                <p>$3.2</p>
+                                <button class="button orderBtn" type="button" onclick="add('Cinnamon Roll')">&plus;</button>
+                                <label id="countCinnamon Roll">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Cinnamon Roll')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/BlueberryScone.jpg" alt="Blueberry Scone">
+                        <div class="menu-info">
+                            <h2>Blueberry Scone</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.44 (40 reviews)</span>
+                            </div>
+                            <p>Tender, buttery scone loaded with wild blueberries and brushed with a light lemon glaze.</p>
+                            <div class="button-container">
+                                <p>$2.6</p>
+                                <button class="button orderBtn" type="button" onclick="add('Blueberry Scone')">&plus;</button>
+                                <label id="countBlueberry Scone">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Blueberry Scone')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <img class="menu-pict" src="/assets/AlmondCroissant.jpg" alt="Almond Croissant">
+                        <div class="menu-info">
+                            <h2>Almond Croissant</h2>
+                            <div class="rate">
+                                <img class="star" src="/assets/star-svgrepo-com.png" alt="Star">
+                                <span>4.50 (86 reviews)</span>
+                            </div>
+                            <p>Flaky, butter-layered pastry filled with sweet almond frangipane and topped with sliced almonds.</p>
+                            <div class="button-container">
+                                <p>$3.0</p>
+                                <button class="button orderBtn" type="button" onclick="add('Almond Croissant')">&plus;</button>
+                                <label id="countAlmond Croissant">0</label>
+                                <button class="button orderBtn" type="button" onclick="mines('Almond Croissant')">&minus;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="checkOut">
+            <a href="order.html" class="button">Check Out</a>
+        </div>
+    </main>
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="left-footer">
+                <div class="icon-logo">
+                    <a href="#">MrCoffee</a>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam adipisci est fugiat minima dolore velit tenetur repudiandae tempore maiores dicta nam, natus voluptatibus nobis quo voluptas tempora dolores expedita laboriosam.</p>
+                <p><a href="mailto:kingsleykie12@gmail.com">kingsleykie12@gmail.com<br>Phone: +12 3456789</a></p>
+            </div>
+            <div class="right-footer">
+                <div class="quick-links">
+                    <p>Quick Links</p>
+                    <div>
+                        <ul class="list-footer">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Product</a></li>
+                            <li><a href="order.html">Order</a></li>
+                            <li><a href="about.html">About us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="resources">
+                    <p>Resources</p>
+                    <div>
+                        <ul class="list-footer">
+                            <li><a href="">Support</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="socmed">
+                    <p>Social Media</p>
+                    <div>
+                        <ul class="list-footer">
+                            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                            <li><a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">Tiktok</a></li>
+                            <li><a href="https://threads.com" target="_blank" rel="noopener noreferrer">Threads</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>
