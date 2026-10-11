@@ -19,3 +19,8 @@ MrCoffee is a modern coffee shop website project that showcases the brand story,
 - **JavaScript (ES6):** DOM manipulation, cart event handling, and browser storage management.
 
 ---
+
+## 🌐 Live Demo
+
+You can visit the deployed website here:  
+👉 **[MrCoffee Live Site](https://mrcoffee.netlify.app)**
