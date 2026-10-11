@@ -23,4 +23,4 @@ MrCoffee is a modern coffee shop website project that showcases the brand story,
 ## 🌐 Live Demo
 
 You can visit the deployed website here:  
-👉 **[MrCoffee Live Site](https://mrcoffee.netlify.app)**
+👉 **[MrCoffee Live Site](https://mrcoffee-k.netlify.app)**
